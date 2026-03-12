@@ -1,0 +1,15 @@
+.footer{
+  width: 100%;
+  margin: 0 auto;
+  background: #1E293B;
+  .footer_logo{
+    width: 100px;
+    height: 100px;
+  }
+  .footer_ul{
+    display: flex;
+    flex-direction: row;
+
+
+  }
+}
