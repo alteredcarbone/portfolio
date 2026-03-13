@@ -7,6 +7,7 @@ import "../../assets/Style/layout/footer.scss"
 export default function Footer() {
     return (
         <footer className='footer'>
+            <div className='footer_social'>
             <img src={logo} alt='Logo Maxime Dupont' className='footer_logo'/>
                 <ul className='footer_ul'>
                     <li>
@@ -30,6 +31,7 @@ export default function Footer() {
                         </a>
                     </li>
                 </ul>
+            </div>
         </footer>
     );
 }

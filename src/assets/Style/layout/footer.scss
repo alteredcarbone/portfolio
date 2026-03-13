@@ -1,15 +1,32 @@
 .footer{
   width: 100%;
-  margin: 0 auto;
   background: #1E293B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  .footer_social{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
   .footer_logo{
-    width: 100px;
-    height: 100px;
+    width: 70px;
   }
   .footer_ul{
     display: flex;
-    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    .social_icon img{
+      width: 40px;
+      transition: transform 0.3s;
+    }
 
-
+    .social_icon img:hover{
+      transform: scale(1.15);
+    }
   }
 }
