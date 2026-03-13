@@ -5,8 +5,11 @@ import "../../assets/Style/layout/header.scss";
 export default function Header() {
     return (
         <header className="header">
-            <img src={logo} alt="Maxime Dupont" className="header_logo"/>
-
+            <NavLink
+            to="/" className={({ isActive }) =>
+            `header_lin ${isActive ? "is-active" : ""}`}>
+                <img src={logo} alt="Maxime Dupont" className="header_logo"/>
+            </NavLink>
             <nav className="header_nav" aria-label="Navigation principale">
                 <NavLink
                     to="/" className={({ isActive }) =>
