@@ -13,8 +13,7 @@ $maincolor: #F1F5F9;
   .header_logo {
     width: 100px;
     height: 100px;
-    margin: 0;
-    padding: 0;
+
   }
 
   .header_nav {
@@ -65,10 +64,6 @@ $maincolor: #F1F5F9;
       background-color: $maincolor;
       transition: width 0.3s ease;
     }
-
-
-
-
 
   }
 }

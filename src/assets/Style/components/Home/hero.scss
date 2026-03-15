@@ -1,5 +1,5 @@
 .hero {
-
+  min-height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,6 +29,17 @@
     line-height: 1.7;
     color: #cbd5e1;
     margin-bottom: 36px;
+  }
+
+  .typing_title {
+    display: inline-block;
+  }
+
+  .cursor {
+    display: inline-block;
+    margin-left: 4px;
+    color: #38bdf8;
+    animation: blink 0.8s infinite;
   }
 
   .hero_buttons {
@@ -75,4 +86,31 @@
     transform: translateY(-2px);
   }
 
+  @keyframes blink {
+    0%,
+    50% {
+      opacity: 1;
+    }
+
+    51%,
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    min-height: 70vh;
+    padding: 60px 20px;
+
+    .hero_buttons {
+      flex-direction: column;
+      width: 100%;
+      max-width: 280px;
+    }
+
+    .btn_primary,
+    .btn_secondary {
+      width: 100%;
+    }
+  }
 }
