@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import "../../assets/Style/components/contact.scss";
+import "../../assets/Style/components/Contact/contact.scss";
 
 import github from "../../assets/Style/icon/github.png";
 import instagram from "../../assets/Style/icon/instagram.png";

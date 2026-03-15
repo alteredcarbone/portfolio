@@ -1,5 +1,13 @@
-export default function home() {
+import Aboutpreview from "./about_preview.jsx";
+import Contactpreview from "./contact_preview.jsx";
+import Hero from "./hero.jsx";
+
+export default function Home() {
     return (
-        <p>Hello worlds</p>
+        <>
+            <Hero />
+            <Aboutpreview />
+            <Contactpreview />
+        </>
     )
 }
