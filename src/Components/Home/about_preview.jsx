@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-
+import "../../assets/Style/components/Home/aboutpreview.scss"
 export default function Aboutpreview(){
     return (
         <section className="about_preview">

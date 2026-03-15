@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
+import "../../assets/Style/components/Home/hero.scss";
 
 export default function Hero() {
     return (
@@ -11,9 +12,14 @@ export default function Hero() {
             </p>
 
             <div className="hero_buttons">
-                <Link to="/about">À propos de moi </Link>
-                <Link to="/contact">Me contacter</Link>
+                <Link to="/about" className="btn_primary">
+                    À propos de moi
+                </Link>
+
+                <Link to="/contact" className="btn_secondary">
+                    Me contacter
+                </Link>
             </div>
         </section>
-    )
+    );
 }

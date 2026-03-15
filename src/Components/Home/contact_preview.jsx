@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom';
+import "../../assets/Style/components/Home/contactpreview.scss"
 
 export default function ContactPreview() {
     return (
@@ -11,7 +12,7 @@ export default function ContactPreview() {
                 N'hésite pas à me contacter.
             </p>
 
-            <Link to="/contact">Me contacter</Link>
+            <Link to="/contact" className="btn_primary">Me contacter</Link>
 
         </section>
     )
