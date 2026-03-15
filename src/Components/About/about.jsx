@@ -12,13 +12,25 @@ import responsiveLogo from "../../assets/Style/stack/responsive.png";
 import fullstackLogo from "../../assets/Style/stack/fullstack.png";
 
 export default function About() {
+    const skills = [
+        { name: "HTML", logo: htmlLogo, level: 90 },
+        { name: "CSS", logo: cssLogo, level: 85 },
+        { name: "SCSS", logo: scssLogo, level: 80 },
+        { name: "JavaScript", logo: jsLogo, level: 75 },
+        { name: "React", logo: reactLogo, level: 70 },
+        { name: "Responsive Design", logo: responsiveLogo, level: 85 },
+        { name: "API", logo: apiLogo, level: 65 },
+        { name: "Bases de données", logo: dbLogo, level: 60 },
+        { name: "Logique full stack", logo: fullstackLogo, level: 65 },
+    ];
+
     return (
         <section className="about_page">
             <div className="about_container">
                 <h1>À propos de moi</h1>
 
                 <p className="about_intro">
-                    Je suis Maxime Dupont, développeur web junior ,
+                    Je suis Maxime Dupont, développeur web junior,
                     ancien pâtissier en reconversion, formé au développement web full stack avec
                     OpenClassrooms.
                 </p>
@@ -70,52 +82,37 @@ export default function About() {
                     <div className="about_skills">
                         <h2>Mes compétences</h2>
 
-                        <ul>
-                            <li>
-                                <span>HTML</span>
-                                <img src={htmlLogo} alt="HTML" className="skill_icon" />
-                            </li>
+                        <div className="skills_list">
+                            {skills.map((skill, index) => (
+                                <div
+                                    className="skill_item"
+                                    key={skill.name}
+                                    style={{ animationDelay: `${index * 0.12}s` }}
+                                >
+                                    <div className="skill_top">
+                                        <div className="skill_infos">
+                                            <img
+                                                src={skill.logo}
+                                                alt={skill.name}
+                                                className="skill_icon"
+                                            />
+                                            <span>{skill.name}</span>
+                                        </div>
 
-                            <li>
-                                <span>CSS</span>
-                                <img src={cssLogo} alt="CSS" className="skill_icon" />
-                            </li>
+                                        <span className="skill_percent">
+                                            {skill.level}%
+                                        </span>
+                                    </div>
 
-                            <li>
-                                <span>SCSS</span>
-                                <img src={scssLogo} alt="SCSS" className="skill_icon" />
-                            </li>
-
-                            <li>
-                                <span>JavaScript</span>
-                                <img src={jsLogo} alt="JavaScript" className="skill_icon" />
-                            </li>
-
-                            <li>
-                                <span>React</span>
-                                <img src={reactLogo} alt="React" className="skill_icon" />
-                            </li>
-
-                            <li>
-                                <span>Responsive Design</span>
-                                <img src={responsiveLogo} alt="Responsive Design" className="skill_icon" />
-                            </li>
-
-                            <li>
-                                <span>API</span>
-                                <img src={apiLogo} alt="API" className="skill_icon" />
-                            </li>
-
-                            <li>
-                                <span>Bases de données</span>
-                                <img src={dbLogo} alt="Bases de données" className="skill_icon" />
-                            </li>
-
-                            <li>
-                                <span>Logique full stack</span>
-                                <img src={fullstackLogo} alt="Logique full stack" className="skill_icon" />
-                            </li>
-                        </ul>
+                                    <div className="skill_bar">
+                                        <div
+                                            className="skill_progress"
+                                            style={{ width: `${skill.level}%` }}
+                                        ></div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
 

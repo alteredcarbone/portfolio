@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "../../assets/Style/components/Home/hero.scss";
 
+
 export default function Hero() {
     return (
         <section className="hero">
