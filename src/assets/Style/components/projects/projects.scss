@@ -1,0 +1,135 @@
+.projects_page {
+  min-height: 100vh;
+  background: #0f172a;
+  color: white;
+  padding: 80px 20px;
+}
+
+.projects_container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects_container h1 {
+  text-align: center;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  margin-bottom: 16px;
+}
+
+.projects_intro {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+.projects_filters {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.projects_filters button {
+  border: 1px solid #38bdf8;
+  background: transparent;
+  color: #38bdf8;
+  padding: 12px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.projects_filters button:hover,
+.projects_filters button.active {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+.projects_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.project_card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 20px;
+  padding: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project_card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.project_card h2 {
+  margin-bottom: 12px;
+  color: #38bdf8;
+}
+
+.project_card p {
+  color: #e2e8f0;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.project_stacks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.stack_icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.stack_icon:hover {
+  transform: scale(1.1);
+}
+
+.project_links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.project_links a {
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.project_links a:first-child {
+  background: transparent;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.project_links a:first-child:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+.project_links a:last-child {
+  background: #38bdf8;
+  border: 1px solid #38bdf8;
+  color: #0f172a;
+}
+
+.project_links a:last-child:hover {
+  transform: translateY(-2px);
+}
+

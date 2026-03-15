@@ -4,6 +4,7 @@ import Home from "./Components/Home/home.jsx";
 import "../src/assets/Style/global.scss";
 import Contact from "./Components/Contact/contact.jsx";
 import About from "./Components/About/about.jsx";
+import Projects from "./Components/Projects/projects.jsx";
 
 export default function App() {
     return (
@@ -13,6 +14,7 @@ export default function App() {
                     <Route path="/" element={<Home />}/>
                     <Route path="/Contact" element={<Contact/>}/>
                     <Route path="/About" element={<About/>}/>
+                    <Route path="/Projects" element={<Projects />}/>
                 </Route>
 
             </Routes>

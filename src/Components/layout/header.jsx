@@ -26,6 +26,11 @@ export default function Header() {
                     `header_link ${isActive ? "is-active" : ""}`}>
                     Contact
                 </NavLink>
+                <NavLink
+                    to="/projects" className={({ isActive }) =>
+                    `header_link ${isActive ? "is-active" : ""}`}>
+                    Mes Projets
+                </NavLink>
             </nav>
 
         </header>
