@@ -149,6 +149,7 @@ export default function Contact() {
                         rel="noreferrer"
                     >
                         <img src={github} alt="GitHub" className="social_logo" />
+                        GitHub
                     </a>
 
                     <a
@@ -157,6 +158,7 @@ export default function Contact() {
                         rel="noreferrer"
                     >
                         <img src={instagram} alt="Instagram" className="social_logo" />
+                        Instagram
                     </a>
 
                     <a
@@ -165,6 +167,7 @@ export default function Contact() {
                         rel="noreferrer"
                     >
                         <img src={twitter} alt="Twitter / X" className="social_logo" />
+                        Twitter / X
                     </a>
 
                     <a
@@ -173,6 +176,7 @@ export default function Contact() {
                         rel="noreferrer"
                     >
                         <img src={linkedin} alt="LinkedIn" className="social_logo" />
+                        LinkedIn
                     </a>
                 </aside>
             </div>

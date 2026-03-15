@@ -8,19 +8,22 @@
   color: white;
   padding: 80px 20px;
   background-color: #0f172a;
+  box-sizing: border-box;
 
   h1 {
-    font-size: clamp(2.8rem, 6vw, 4.8rem);
+    font-size: clamp(2.4rem, 6vw, 4.8rem);
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 12px;
+    max-width: 900px;
   }
 
   h2 {
-    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-size: clamp(1.2rem, 3vw, 2rem);
     font-weight: 500;
     color: #38bdf8;
     margin-bottom: 20px;
+    padding: 0 10px;
   }
 
   p {
@@ -29,10 +32,12 @@
     line-height: 1.7;
     color: #cbd5e1;
     margin-bottom: 36px;
+    padding: 0 10px;
   }
 
   .typing_title {
     display: inline-block;
+    word-break: break-word;
   }
 
   .cursor {
@@ -61,6 +66,7 @@
     justify-content: center;
     align-items: center;
     min-width: 180px;
+    text-align: center;
   }
 
   .btn_primary {
@@ -102,6 +108,21 @@
     min-height: 70vh;
     padding: 60px 20px;
 
+    h1 {
+      font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    h2 {
+      font-size: clamp(1.1rem, 4vw, 1.5rem);
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+
     .hero_buttons {
       flex-direction: column;
       width: 100%;
@@ -111,6 +132,33 @@
     .btn_primary,
     .btn_secondary {
       width: 100%;
+      min-width: unset;
+    }
+  }
+
+  @media (max-width: 480px) {
+    min-height: 65vh;
+    padding: 48px 16px;
+
+    h1 {
+      font-size: clamp(1.8rem, 9vw, 2.4rem);
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+    }
+
+    .btn_primary,
+    .btn_secondary {
+      padding: 12px 18px;
+      font-size: 0.95rem;
+      border-radius: 10px;
     }
   }
 }
