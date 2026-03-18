@@ -25,7 +25,8 @@ const projectsData = [
     {
         id: 1,
         title: "Booki",
-        description: "Intégration d’une page d’accueil responsive en HTML et CSS.",
+        description: `Intégration d’une page d’accueil responsive en HTML et CSS.
+Ce projet pourra évoluer avec l’ajout de fonctionnalités et d’améliorations futures.`,
         stacks: ["HTML", "CSS", "Responsive"],
         github: "https://github.com/alteredcarbone/Projet-1",
         demo: "https://projet-1-5es.pages.dev/",
@@ -33,7 +34,8 @@ const projectsData = [
     {
         id: 2,
         title: "Kasa",
-        description: "Application React avec composants, routing et SCSS.",
+        description: `Application React avec composants, routing et SCSS.
+Une évolution future est envisagée pour améliorer certaines fonctionnalités et le confort d’utilisation.`,
         stacks: ["React", "SCSS", "JavaScript"],
         github: "https://github.com/alteredcarbone/Projet-4",
         demo: "https://projet-4.pages.dev/",
