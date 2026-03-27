@@ -52,7 +52,7 @@ export default function Header() {
                 </NavLink>
 
                 <a
-                    href="/CV_Maxime_Dupont.pdf"
+                    href="/CV_Maxime_Dupont.0.1.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="header_link header_cv"
