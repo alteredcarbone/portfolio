@@ -40,6 +40,13 @@ Une évolution future est envisagée pour améliorer certaines fonctionnalités 
         github: "https://github.com/alteredcarbone/Projet-4",
         demo: "https://projet-4.pages.dev/",
     },
+    {
+        id: 3,
+        title: "E.Leclerc Stockage",
+        description: 'Application de gestion de stocks et de matieres premieres. Calculateur pour crée les recettes qui geres automatiquement la gestion des matières premieres',
+        stacks: ["HTML", "CSS", "JavaScript"],
+        demo: "https://sotckageinvetory.pages.dev/",
+    }
 ];
 
 const filters = ["Tous", "HTML", "CSS", "Responsive", "React", "SCSS", "JavaScript"];
@@ -90,9 +97,11 @@ export default function Projects() {
                             </div>
 
                             <div className="project_links">
-                                <a href={project.github} target="_blank" rel="noreferrer">
-                                    GitHub
-                                </a>
+                                {project.github && (
+                                    <a href={project.github} target="_blank" rel="noreferrer">
+                                        GitHub
+                                    </a>
+                                )}
                                 <a href={project.demo} target="_blank" rel="noreferrer">
                                     Voir le projet
                                 </a>

@@ -9,19 +9,29 @@ import reactLogo from "../../assets/Style/stack/react.png";
 import apiLogo from "../../assets/Style/stack/api.png";
 import dbLogo from "../../assets/Style/stack/database.png";
 import responsiveLogo from "../../assets/Style/stack/responsive.png";
-import fullstackLogo from "../../assets/Style/stack/fullstack.png";
+
 
 export default function About() {
-    const skills = [
-        { name: "HTML", logo: htmlLogo, level: 90 },
-        { name: "CSS", logo: cssLogo, level: 85 },
-        { name: "SCSS", logo: scssLogo, level: 80 },
-        { name: "JavaScript", logo: jsLogo, level: 75 },
-        { name: "React", logo: reactLogo, level: 70 },
-        { name: "Responsive Design", logo: responsiveLogo, level: 85 },
-        { name: "API", logo: apiLogo, level: 65 },
-        { name: "Bases de données", logo: dbLogo, level: 60 },
-        { name: "Logique full stack", logo: fullstackLogo, level: 65 },
+    const skillCategories = [
+        {
+            title: "Stack",
+            skills: [
+                { name: "HTML", logo: htmlLogo },
+                { name: "CSS", logo: cssLogo },
+                { name: "SCSS", logo: scssLogo },
+                { name: "JavaScript", logo: jsLogo },
+                { name: "React", logo: reactLogo },
+            ],
+        },
+        {
+            title: "Autres compétences",
+            skills: [
+                { name: "Responsive Design", logo: responsiveLogo },
+                { name: "API", logo: apiLogo },
+                { name: "Bases de données", logo: dbLogo },
+
+            ],
+        },
     ];
 
     return (
@@ -82,33 +92,32 @@ export default function About() {
                     <div className="about_skills">
                         <h2>Mes compétences</h2>
 
-                        <div className="skills_list">
-                            {skills.map((skill, index) => (
-                                <div
-                                    className="skill_item"
-                                    key={skill.name}
-                                    style={{ animationDelay: `${index * 0.12}s` }}
-                                >
-                                    <div className="skill_top">
-                                        <div className="skill_infos">
-                                            <img
-                                                src={skill.logo}
-                                                alt={skill.name}
-                                                className="skill_icon"
-                                            />
-                                            <span>{skill.name}</span>
-                                        </div>
+                        <div className="skills_categories">
+                            {skillCategories.map((category, categoryIndex) => (
+                                <div className="skills_group" key={category.title}>
+                                    <h3>{category.title}</h3>
 
-                                        <span className="skill_percent">
-                                            {skill.level}%
-                                        </span>
-                                    </div>
-
-                                    <div className="skill_bar">
-                                        <div
-                                            className="skill_progress"
-                                            style={{ width: `${skill.level}%` }}
-                                        ></div>
+                                    <div className="skills_list">
+                                        {category.skills.map((skill, skillIndex) => (
+                                            <div
+                                                className="skill_item"
+                                                key={skill.name}
+                                                style={{
+                                                    animationDelay: `${(categoryIndex * 5 + skillIndex) * 0.12}s`,
+                                                }}
+                                            >
+                                                <div className="skill_top">
+                                                    <div className="skill_infos">
+                                                        <img
+                                                            src={skill.logo}
+                                                            alt={skill.name}
+                                                            className="skill_icon"
+                                                        />
+                                                        <span>{skill.name}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             ))}
